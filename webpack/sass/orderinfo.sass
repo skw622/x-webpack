@@ -1,0 +1,46 @@
+.orderinfo
+    &_title
+        margin-bottom: 70px
+        line-height: 1
+    &_box
+        background: url('/assets/images/orderinfo/orderinfo-bg.jpg') no-repeat left center
+        height: 393px
+        &_area
+            background: url('/assets/images/orderinfo/orderinfo-layer.jpg') no-repeat center center
+            height: 306px
+            max-width: 603px
+            width: 100%
+            margin-top: 44px
+            float: right
+            box-sizing: border-box
+            padding: 91px 87px 113px 125px
+            font-size: 17px
+            color: #4a4a4a
+            letter-spacing: -0.54px
+            font-weight: 600
+            line-height: 1.3
+            p
+                padding: 0
+                margin-bottom: 24px
+            p:last-child
+                margin-bottom: 0
+
+@media screen and (max-width: 850px)
+    .orderinfo
+        &_box
+            background: url('/assets/images/orderinfo/orderinfo-bg.jpg') no-repeat top center
+            height: 450px
+            &_area
+                margin-top: 200px
+
+@media screen and (max-width: 768px)
+    .orderinfo
+        &_box
+            &_area
+                padding: 40px 45px 0 85px
+
+@media screen and (max-width: 500px)
+    .orderinfo
+        &_box
+            &_area
+                padding: 50px 25px 0

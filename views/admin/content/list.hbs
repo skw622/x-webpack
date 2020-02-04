@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h4 class="c-grey-900 mT-10 mB-30">Список</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                <h4 class="c-grey-900 mB-20"><a href="/admin/content/create" class="btn btn-secondary btn-sm">Добавить</a></h4>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Идентификатор</th>
+                            <th scope="col">Название</th>
+                            <th scope="col">Текст</th>
+                            <th scope="col">Управление</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each content}}
+                            <tr>
+                                <td>{{this.identifikator}}</td>
+                                <td>{{this.title}}</td>
+                                <td>{{this.text}}</td>
+                                <td>
+                                    <a href="/admin/content/update/{{this.id}}" class="btn btn-info btn-sm">Редактировать</a>
+                                    <!-- <a href="/admin/content/delete/{{this.id}}" class="btn btn-danger btn-sm">Удалить</a> -->
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

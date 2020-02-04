@@ -1,0 +1,110 @@
+.about
+    margin-bottom: 70px
+    margin-top: 38px
+    &_title
+        padding: 0
+        margin: 0 0 35px 0
+        line-height: 1
+    &_box
+        background: url('/assets/images/about/banner.jpg') no-repeat center center
+        min-height: 615px
+        position: relative
+        &_shadow-top
+            -webkit-box-shadow: 0px 9px 24px 2px rgba(0,0,0,0.15)
+            -moz-box-shadow: 0px 9px 24px 2px rgba(0,0,0,0.15)
+            box-shadow: 0px 9px 24px 2px rgba(0,0,0,0.15)
+        &_shadow-bottom
+            -webkit-box-shadow: 0px 9px 24px -2px rgba(0,0,0,0.15)
+            -moz-box-shadow: 0px 9px 24px -2px rgba(0,0,0,0.15)
+            box-shadow: 0px 9px 24px -2px rgba(0,0,0,0.15)
+        &_area
+            background: #fff
+            position: absolute
+            color: #4a4a4a
+            font-size: 17px
+            letter-spacing: -0.54px
+            line-height: 1.3
+            font-weight: 600
+            box-sizing: border-box
+            p
+                padding: 0
+                margin: 0
+        &_first
+            width: 430px
+            height: 230px
+            padding: 68px 63px 43px 38px
+            top: 0
+            left: 165px
+        &_second
+            width: 430px
+            height: 230px
+            padding: 68px 39px 60px 38px
+            top: 40px
+            right: 165px
+        &_third
+            width: 430px
+            height: 144px
+            padding: 47px 50px 56px 35px
+            top: 221px
+            left: 325px
+        &_fourth
+            width: 430px
+            height: 230px
+            padding: 61px 54px 45px 38px
+            top: 385px
+            left: 224px
+        &_fifth
+            width: 430px
+            height: 144px
+            padding: 47px 41px 37px 35px
+            top: 432px
+            right: 194px
+
+@media screen and (max-width: 1240px)
+    .about
+        &_box
+            &_first
+                top: 0
+                left: 65px
+            &_second
+                top: 40px
+                right: 65px
+            &_third
+                top: 221px
+                left: 225px
+            &_fourth
+                top: 385px
+                left: 124px
+            &_fifth
+                top: 432px
+                right: 94px
+
+@media screen and (max-width: 1100px)
+    .about
+        &_box
+            &_first
+                top: 0
+                left: 15px
+            &_second
+                top: 40px
+                right: 15px
+            &_third
+                top: 221px
+                left: 135px
+            &_fourth
+                top: 385px
+                left: 24px
+            &_fifth
+                top: 432px
+                right: 15px
+
+@media screen and (max-width: 900px)
+    .about
+        &_box
+            &_area
+                position: static
+                width: calc(100% - (30px)) !important
+                margin: 0 auto 15px
+                padding: 30px
+                height: auto !important
+                background: rgba(255,255,255,0.95)

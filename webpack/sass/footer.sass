@@ -1,0 +1,81 @@
+.footer
+    margin-top: 70px
+    position: relative
+    &_decoration
+        position: absolute
+        background: url('/assets/images/decoration/decoration4.png') no-repeat left center
+        width: 160px
+        height: 381px
+        right: 0
+        top: 0
+    &_title
+        margin-bottom: 25px
+    &_image
+        img
+            display: block
+    &_contacts
+        padding-left: 110px
+        &_list
+            padding: 0
+            margin: 90px 0 0 0
+            list-style: none
+            color: #4a4a4a
+            &_item
+                display: block
+                margin-bottom: 30px
+            &_item:last-child
+                margin-bottom: 0
+        &_ico, &_info
+            display: inline-block
+            vertical-align: middle
+            font-size: 0
+        &_info
+            margin-left: 16px
+            &_title
+                letter-spacing: -0.7px
+                font-size: 23px
+                font-weight: bold
+                display: block
+                line-height: 23px
+            &_text
+                font-size: 20px
+                display: block
+                line-height: 20px
+                letter-spacing: -0.7px
+                margin-top: 15px
+    &_copy
+        font-size: 0
+        p
+            margin: 25px 0 0 0
+            padding: 0 0 30px 0
+            color: #4a4a4a
+            font-size: 12px
+            text-align: center
+        &_logo
+            float: left
+            margin-top: -18px
+
+@media screen and (max-width: 768px)
+    .footer
+        margin-top: 30px
+        &_contacts
+            padding-left: 0
+            text-align: center
+            &_list
+                margin: 15px 0 0 0
+
+@media screen and (max-width: 600px)
+    .footer
+        &_copy
+            &_logo
+                float: none
+                display: block
+                margin: 10px auto
+
+@media screen and (max-width: 500px)
+    .footer
+        &_contacts
+            padding-left: 0
+            text-align: center
+            &_list
+                margin: 15px 0 0 0

@@ -1,0 +1,57 @@
+.countries
+    margin-top: 60px
+    position: relative
+    &_decoration
+        position: absolute
+        background: url('/assets/images/decoration/decoration3.png') no-repeat right center
+        width: 140px
+        height: 410px
+        left: 0
+        top: 130px
+    .countries-container
+        margin-left: 255px
+    &_container
+        border-radius: 20px
+        border: 1px dashed #fff1ec
+        background-color: rgba(255,241,236, 0.4)
+    &_title
+        color: #fa7048
+        letter-spacing: -0.5px
+        font-size: 16px
+        padding-top: 30px
+        font-weight: 600
+        padding-bottom: 24px
+        margin-left: 200px
+        display: block
+    &_item
+        margin-bottom: 50px
+        &_image, &_info
+            display: inline-block
+            vertical-align: middle
+            font-size: 0
+        &_info
+            color: #4a4a4a
+            font-size: 16px
+            font-weight: 600
+            padding-left: 12px
+
+@media screen and (max-width: 1440px)
+    .countries
+        .countries-container
+            margin-left: auto
+
+@media screen and (max-width: 768px)
+    .countries
+        &_title
+            margin-left: 0
+            text-align: center
+
+@media screen and (max-width: 500px)
+    .countries
+        &_item
+            text-align: center
+            &_image, &_info
+                display: block
+            &_info
+                padding-left: 0
+                padding-top: 12px

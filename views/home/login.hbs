@@ -1,0 +1,27 @@
+{{> header this }}
+<div class="main-background">
+    <div class="main-background-inner">
+        <form class="partner_form partner_formstatic" action="/authenticate" method="post">
+            <div class="row">
+                <div class="col-12">
+                    <span class="partner_form_title">Страница входа</span>
+                </div>
+                <div class="col-12">
+                    <div class="partner_form_row">
+                        <input class="partner_form_input" type="text" name="username" placeholder="Ваш Логин *" required value="">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="partner_form_row">
+                        <input class="partner_form_input" type="password" name="password" placeholder="Пароль *" required value="">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="partner_form_submit">
+                        <button type="submit" class="partner_form_btn">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

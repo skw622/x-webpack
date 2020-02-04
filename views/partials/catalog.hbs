@@ -1,0 +1,28 @@
+<section class="catalog" id="catalog">
+    <div class="catalog_decoration"></div>
+    <div class="container">
+        <h4 class="main-title catalog_title">{{contents.catalog_title}}</h4>
+        <div class="row">
+            {{#each products}}
+                <div class="col-sm-6 col-md-4 catalog_item">
+                    <div class="catalog_item_image">
+                        {{#if this.image}}
+                            <img src="/uploads/images/{{this.id}}/{{this.image}}" alt="{{this.title}}">
+                        {{/if}}
+                    </div>
+                    <div class="catalog_item_info">
+                        <h2 class="catalog_item_info_title">{{this.title}}</h2>
+                        <p class="catalog_item_info_text">{{this.text}}</p>
+                    </div>
+                    <div class="catalog_item_size">
+                        <p>Размер: <span>{{this.size}}</span></p>
+                    </div>
+                    <div class="catalog_item_price">
+                        <span>{{this.price_rub}} <i class="currency-rub"></i></span>
+                        <span>{{this.price_usd}} <i class="currency-usd"></i></span>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

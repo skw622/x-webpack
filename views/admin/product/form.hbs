@@ -1,0 +1,54 @@
+<div class="row gap-20 masonry pos-r">
+    <div class="masonry-sizer col-md-12"></div>
+    <div class="masonry-item col-md-12">
+        <div class="bgc-white p-20 bd">
+            <h6 class="c-grey-900"><a href="/admin/product" class="btn btn-secondary btn-sm">К списку</a></h6>
+            <div class="mT-30">
+                <form action="{{#if product}}/admin/product/postupdateproduct/{{product.id}}{{else}}/admin/product/postproduct{{/if}}" enctype="multipart/form-data" method="POST">
+                    <div class="form-group">
+                        <label for="title">Название</label>
+                        <input type="text" class="form-control" value="{{product.title}}" name="title" id="title" aria-describedby="titleHelp" placeholder="Название">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Описание</label>
+                        <input type="text" class="form-control" value="{{product.text}}" name="text" id="text" aria-describedby="titleHelp" placeholder="Описание">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Размер</label>
+                        <input type="text" class="form-control" value="{{product.size}}" name="size" id="size" aria-describedby="titleHelp" placeholder="Размер">
+                    </div>
+                    <div class="form-group">
+                        <label for="price_rub">Цена (Рубль)</label>
+                        <input type="text" class="form-control" value="{{product.price_rub}}" name="price_rub" id="price_rub" aria-describedby="titleHelp" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="price_usd">Цена (Доллар)</label>
+                        <input type="text" class="form-control" value="{{product.price_usd}}" name="price_usd" id="price_usd" aria-describedby="titleHelp" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Позиция</label>
+                        <input type="text" class="form-control" name="position" value="{{product.position}}" id="position" aria-describedby="positionHelp" placeholder="0">
+                        <small id="positionHelp" class="form-text text-muted">Позиция: для сортировки на странице</small>
+                    </div>
+                    <div class="checkbox checkbox-circle checkbox-info peers ai-c mB-15">
+                        <input type="checkbox" id="status" name="status" {{#if product.status}}checked="checked"{{/if}} class="peer" value="1">
+                        <label for="status" class="peers peer-greed js-sb ai-c">
+                            <span class="peer peer-greed">Показывать на странице?</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Картинка</label>
+                        <input type="file" class="form-control" name="image" value="{{product.image}}" id="image" aria-describedby="positionHelp" placeholder="0">
+                    </div>
+                    {{#if product.image}}
+                        <div class="form-group">
+                            <img src="/uploads/images/{{product.id}}/{{product.image}}" height="100px" alt="">
+                        </div>
+                    {{/if}}
+
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

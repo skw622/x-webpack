@@ -1,0 +1,83 @@
+.partner
+    position: fixed
+    min-width: 100%
+    min-height: 100%
+    background: #2A6E74
+    z-index: 99
+    top: 0
+    left: 0
+    display: none
+    overflow: auto
+    &_form
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+        width: 95%
+        min-height: 475px
+        max-height: 475px
+        margin: 0 auto
+        max-width: 540px
+        background: #fff
+        border-radius: 15px
+        padding: 30px
+        box-sizing: border-box
+        &_title
+            font-size: 16px
+            color: #4a4a4a
+            font-weight: 600
+            display: block
+            margin-bottom: 26px
+            letter-spacing: -1.22px
+        &_row
+            margin-bottom: 25px
+        &_input
+            border: 0
+            border-radius: 5px
+            background-color: #F8FAFC
+            padding: 0 20px
+            height: 54px
+            color: #4a4a4a
+            font-size: 12px
+            width: 100%
+        &_input::placeholder
+              color: #4a4a4a
+              opacity: 1
+        &_input:-ms-input-placeholder
+              color: #4a4a4a
+        &_input::-ms-input-placeholder
+              color: #4a4a4a
+        &_btn
+            margin-top: 12px
+            font-weight: 600
+            letter-spacing: -1.06px
+            font-size: 14px
+            color: #fff
+            border: 0
+            box-shadow: 0 2px 4px rgba(39, 38, 71, 0.06)
+            border-radius: 20px
+            background-color: #223986
+            height: 40px
+            line-height: 40px
+            width: 100%
+            display: block
+    &_formstatic
+        position: static
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        transform: none
+        margin: 0 auto
+        min-height: 325px
+        max-height: 325px
+@media screen and (max-width: 500px)
+    .partner
+        &_form
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            transform: none
+            margin: 20px auto

@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <h4 class="c-grey-900 mT-10 mB-30">Список</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                <h4 class="c-grey-900 mB-20"><a href="/admin/product/create" class="btn btn-secondary btn-sm">Добавить</a></h4>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Название</th>
+                            <th scope="col">Описание</th>
+                            <th scope="col">Размер</th>
+                            <th scope="col">Цена (Рубль)</th>
+                            <th scope="col">Цена (Доллар)</th>
+                            <th scope="col">Управление</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each product}}
+                            <tr>
+                                <td>{{this.title}}</td>
+                                <td>{{this.text}}</td>
+                                <td>{{this.size}}</td>
+                                <td>{{this.price_rub}}</td>
+                                <td>{{this.price_usd}}</td>
+                                <td>
+                                    <a href="/admin/product/update/{{this.id}}" class="btn btn-info btn-sm">Редактировать</a>
+                                    <a href="/admin/product/delete/{{this.id}}" class="btn btn-danger btn-sm">Удалить</a>
+                                </td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

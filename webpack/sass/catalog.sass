@@ -1,0 +1,59 @@
+.catalog
+    margin-bottom: 20px
+    position: relative
+    &_decoration
+        position: absolute
+        background: url('/assets/images/decoration/decoration2.png') no-repeat left center
+        width: 224px
+        height: 410px
+        right: 0
+        top: 230px
+    p, h2
+        margin: 0
+        padding: 0
+    &_title
+        line-height: 1
+        margin-bottom: 60px
+    &_item
+        color: #4a4a4a
+        margin: 0 auto 45px
+        max-width: 350px
+        -webkit-box-shadow: 0px 40px 34px -52px rgba(0,0,0,0.35)
+        -moz-box-shadow: 0px 40px 34px -52px rgba(0,0,0,0.35)
+        box-shadow: 0px 40px 34px -52px rgba(0,0,0,0.35)
+        &_info
+            padding-left: 25px
+            margin-top: 25px
+            &_title
+                font-weight: bold
+                font-size: 19px
+                letter-spacing: -0.6px
+                padding-bottom: 4px !important
+            &_text
+                font-size: 13px
+                letter-spacing: -0.4px
+        &_size
+            padding-left: 25px
+            letter-spacing: -0.5px
+            font-size: 15px
+            margin: 15px 0 12px
+            span
+                font-weight: bold
+                font-size: 16px
+        &_price
+            padding-left: 25px
+            padding-bottom: 30px
+            letter-spacing: -0.9px
+            font-weight: bold
+            font-size: 0
+            line-height: 1
+            span
+                display: inline-block
+                font-size: 29px
+            span:first-child::after
+                content: ''
+                border: 1px dotted #979797
+                opacity: 0.51
+                height: 20px
+                display: inline-block
+                margin: 0 26px 0 24px

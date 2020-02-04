@@ -1,0 +1,48 @@
+.sendinfo
+    margin-top: 110px
+    &_title
+        margin-bottom: 70px
+        line-height: 1
+    &_box
+        background: url('/assets/images/sendinfo/sendinfo-bg.jpg') no-repeat right center
+        height: 394px
+        &_area
+            background: url('/assets/images/sendinfo/sendinfo-layer.jpg') no-repeat center center
+            height: 306px
+            max-width: 603px
+            width: 100%
+            margin-top: 44px
+            float: left
+            box-sizing: border-box
+            padding: 93px 146px 92px 105px
+            font-size: 17px
+            color: #4a4a4a
+            letter-spacing: -0.54px
+            font-weight: 600
+            line-height: 1.3
+            p
+                padding: 0
+                margin-bottom: 24px
+            p:last-child
+                margin-bottom: 0
+
+@media screen and (max-width: 850px)
+    .sendinfo
+        &_box
+            background: url('/assets/images/sendinfo/sendinfo-bg.jpg') no-repeat top center
+            height: 500px
+            &_area
+                margin-top: 200px
+
+@media screen and (max-width: 768px)
+    .sendinfo
+        &_box
+            &_area
+                padding: 40px 60px 0 45px
+
+@media screen and (max-width: 500px)
+    .sendinfo
+        margin-top: 70px
+        &_box
+            &_area
+                padding: 50px 25px 0
